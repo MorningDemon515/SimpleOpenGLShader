@@ -19,6 +19,8 @@ public:
 
 	void Use();
 
+	int GetShaderSourceUniform(const char* uniform);
+
 private:
 	GLuint VertexShader, FragmentShader, ShaderProgram;
 };
@@ -30,6 +32,8 @@ public:
 	~ShaderFromFile();
 
 	void Use();
+
+	int GetShaderSourceUniform(const char* uniform);
 
 private:
 	GLuint VertexShader, FragmentShader, ShaderProgram;

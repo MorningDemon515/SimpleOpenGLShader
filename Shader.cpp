@@ -76,3 +76,14 @@ void ShaderFromFile::Use()
 {
     glUseProgram(ShaderProgram);
 }
+
+int ShaderFromFile::GetShaderSourceUniform(const char* uniform)
+{
+    return glGetUniformLocation(ShaderProgram,uniform);
+}
+
+int ShaderFromSource::GetShaderSourceUniform(const char* uniform)
+{
+    return glGetUniformLocation(ShaderProgram, uniform);
+}
+
